@@ -1,0 +1,14 @@
+{
+  "name": "trabalho_cpw2",
+  "version": "1.0.0",
+  "description": "trabalho final para cpw2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Claudio Boff",
+  "license": "ISC",
+  "dependencies": {
+    "phaser": "^3.70.0"
+  }
+}
