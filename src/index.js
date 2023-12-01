@@ -67,6 +67,22 @@ const config = {
     const moveisCasaLayer = map.createLayer("Moveis_casa", moveisTileset, 0, 0);//.setScale(4);
     const biomaLayer = map.createLayer("Bioma", biomaTileset, 0, 0);//.setScale(4);
 
+    const tilesetLayers = [
+      fundoAguaLayer,
+      fundoGramaLayer,
+      altosLayer,
+      fundoCasaLayer,
+      casaLayer,
+      moveisCasaLayer,
+      biomaLayer
+  ];
+
+  tilesetLayers.forEach(layer => {
+      layer.setCollisionByProperty({ Collider: true });
+  });
+
+
+
     cursors = this.input.keyboard.createCursorKeys();
 
     const spawnPointObject = map.findObject("Player_spawn", (obj) => obj.name === "spawnPoint");
@@ -81,6 +97,10 @@ const config = {
       this.cameras.main.startFollow(player);
       this.physics.world.enable(player);
     }
+
+    this.physics.world.setBounds(0, 0, map.widthInPixels, map.heightInPixels);
+    this.physics.add.collider(player, tilesetLayers);
+
        this.anims.create({
         key: 'player_walk', // Animation key
         frames: this.anims.generateFrameNumbers('playerOne', { start: 0, end: 3 }), // Adjust frame range
