@@ -3,7 +3,7 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "casa.json",
+    "activeFile": "world_map.json",
     "expandedProjectPaths": [
         "."
     ],
@@ -33,11 +33,11 @@
             "scaleInDock": 2
         },
         "world_map.json": {
-            "scale": 1.5,
-            "selectedLayer": 6,
+            "scale": 4,
+            "selectedLayer": 7,
             "viewCenter": {
-                "x": 748.3333333333333,
-                "y": 498.3333333333333
+                "x": 406.625,
+                "y": 242.625
             }
         },
         "world_map.json#Bioma": {
@@ -45,7 +45,7 @@
             "scaleInEditor": 5.5
         },
         "world_map.json#Grama": {
-            "scaleInDock": 1.5,
+            "scaleInDock": 3,
             "scaleInEditor": 3
         },
         "world_map.json#Hills": {
@@ -72,11 +72,12 @@
     "map.tileWidth": 16,
     "map.width": 300,
     "openFiles": [
-        "casa.json"
+        "world_map.json"
     ],
     "project": "projeto.tiled-project",
     "property.type": "bool",
     "recentFiles": [
+        "world_map.json",
         "casa.json"
     ],
     "tileset.embedInMap": true,

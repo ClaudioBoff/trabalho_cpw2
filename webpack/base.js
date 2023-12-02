@@ -16,6 +16,18 @@ module.exports = {
         }
       },
       {
+        test: /\.mp3$/,
+        use: {
+        loader: 'file-loader'
+        }
+      },
+      {
+        test: [/\.ogg$/, /\.wav$/],
+        use:{
+          loader: 'file-loader'
+        }
+      },
+      {
         test: [/\.vert$/, /\.frag$/],
         use: "raw-loader"
       },
