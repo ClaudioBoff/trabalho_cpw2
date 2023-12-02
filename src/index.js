@@ -15,6 +15,7 @@ import sound from "./assets/sounds/jumpscare.ogg";
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
+
 const config = {
     parent: 'gamediv',
     type: Phaser.AUTO,
@@ -177,7 +178,7 @@ const config = {
     score+=1;
     nomSound.play();
   }
-  if(score==1){
+  if(score==6){
     alert("I have eaten all the eggs I wanted! Now I can finally cease from existence. Become the void. I was already dead from the start.");
     this.scene.stop();
     score = 0;
@@ -186,7 +187,7 @@ const config = {
     sleep(2000).then(window.close);
   }
 
-  if(starting==6){
+  if(starting==0){
     alert("Damn! I'm hungry af. I need me some eggs! 6 to be exact.");
     BGMusic.play();
     starting+=1;
